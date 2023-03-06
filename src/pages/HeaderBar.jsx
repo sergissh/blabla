@@ -9,11 +9,6 @@ const HeaderBar = () => {
     const handleClick = () =>{
         setClicked(!clicked)
     }
-    
-    const setZIndex = () =>{
-
-
-    }
     return (
         <Header>
             <h2>NN Documentation<span> by Sergi S.H.</span></h2>
@@ -32,7 +27,7 @@ const HeaderBar = () => {
                 </div>
                 <div className='credentials'>
                     <a onClick = {handleClick} href='/'>Sign Up</a>
-                    <a onClick = {handleClick} href='/'>Sign In</a>
+                    <a onClick = {handleClick} href='/login'>Log In</a>
                 </div>
             </div>
             <div className='burger-btn'>

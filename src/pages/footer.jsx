@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import CopyRight from '../components/CopyRight';
 
 const Footer = () => {
     return (
@@ -52,7 +53,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='copy'>
-                    © 2023 Copyright: Sergi Sánchez Hernández a.k.a Sergissh/ElPelucas
+                <CopyRight/>
             </div>
         </MainFooter>
     );
@@ -75,6 +76,9 @@ const MainFooter = styled.footer`
         flex-direction: row;
         justify-content: center;
         margin-bottom: 1rem;
+        @media(max-width: 840px){
+            flex-wrap: wrap;
+        }
         h4{
             font-size: 1.2rem;
             display: inline;
@@ -94,6 +98,7 @@ const MainFooter = styled.footer`
     
     .top-footer__about{
         max-width: 500px;
+        min-width: 350px;
         width: 50%;
         margin-right: 2rem;
         p{
@@ -103,8 +108,10 @@ const MainFooter = styled.footer`
         span{
             font-weight: bold;
         }
+        @media(max-width: 840px){
+            flex-grow: 2;
+        }
     }
-    
     .top-footer__support{
         width: 21%;
         margin-left: 0;
@@ -133,5 +140,4 @@ const MainFooter = styled.footer`
         margin-right: auto;
         border-top: 1px solid #ccc;
     }
-    
 `
