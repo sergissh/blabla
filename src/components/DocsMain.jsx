@@ -56,25 +56,34 @@ const Search = styled.div`
        } 
     }
     form{
-        max-width: 80%;
+        max-width: 500px;
+        width: 100%;
+        display: flex;
         margin: auto;
+        flex-wrap: nowrap;
+        gap: 0;
         input{
-            width: 36rem;
+            width: 80%;
             padding: 10px;
             font-size: 17px;
             border: 1px solid #444;
             border-radius: 20px;
             border-top-right-radius: 0;
             border-bottom-right-radius: 0;
+            outline: none;
         }
         button{
+            width: 20%;
             border: 1px solid #444;
             border-radius: 20px;
-            padding: 13px;
+            padding: 10px;
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
             color: white;
-            background: rgb(188, 43, 183)
+            background: rgb(188, 43, 183);
+            i{
+                font-size: 20px;
+            }
         }
     }
 `

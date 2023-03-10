@@ -10,7 +10,7 @@ const Project = () => {
                 <dl className='project-description'>
                     <dd className='project-description__desc'>
                         En este proyecto se realiza una búsqueda e implementación del legendario ELpelucas SaBe,
-                        el qual lleva mucho tiempo desaparecido
+                        el qual lleva mucho tiempo desaparecido.
                     </dd>
                     <dd className='project-description__lang'>HTML, CSS, JS</dd>
                 </dl>
@@ -39,7 +39,9 @@ const Proj = styled.div`
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
+    justify-items: center;
     color: white;
+    gap: 0;
 }
 
 .project:hover{
@@ -57,16 +59,20 @@ const Proj = styled.div`
 }
 
 .project-description{
-    margin-top: 10px;
-}
-
-.project-description__lang{
-    margin-top: 10px;
-    border-radius: 10px;
-    display: inline-block;
-    background-color: rgb(54, 194, 84);
-    opacity: 0.8;
-    padding: 3px 4px;
+    margin: 10px auto 0 auto;
+    text-align: center;
+    .project-description__lang{
+        margin: 10px auto 0 auto;
+        border-radius: 10px;
+        display: inline-block;
+        background-color: rgb(54, 194, 84);
+        opacity: 0.8;
+        padding: 3px 4px;
+    }
+    .project-description__desc{
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 .project-links{

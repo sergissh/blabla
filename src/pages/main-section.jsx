@@ -61,6 +61,9 @@ const Main = styled.main`
     .top-main h1{
         font-weight: 600;
         font-size: 4.5rem;
+        @media(max-width: 840px){
+            font-size: 3.5rem;
+        }
     }
     .top-main__exp{
         font-size: 1.2rem;
@@ -69,6 +72,9 @@ const Main = styled.main`
         margin-right: auto;
         line-height: 1.5;
         max-width: 50%;
+        @media(max-width: 840px){
+            max-width: 100%;
+        }
     }
     .main-projects{
         margin-top: 3rem;
